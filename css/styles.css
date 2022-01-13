@@ -1,0 +1,79 @@
+#welcome {
+
+    padding-top: 5rem;
+}
+
+.tulisan1 {
+
+    margin-top: 5rem;
+}
+
+#footer {
+
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+}
+
+.home {
+
+    margin-right: 20px;
+}
+
+/* LOGIN */
+.registerlogi {
+
+    margin-top: 1rem;
+}
+
+.form-signin1 {
+
+    padding-top: 150px;
+}
+
+.h1login {
+
+    padding-bottom: 20px;
+}
+
+.buttonlogin {
+
+    padding-top: 20px;
+}
+
+.cardlogin {
+
+    background-color: #87CEEB;
+
+}
+
+#bodylogin {
+
+    background-color: #E9FDFF;
+}
+
+.loginform {
+
+    background-color: white;
+}
+
+.btnlogin,
+.bntnregister {
+
+    background-color: #87CEEB;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* register */
+.registerlogi {
+
+    margin-top: 1rem;
+}
+
+.form-register1 {
+
+    padding-top: 100px;
+}
