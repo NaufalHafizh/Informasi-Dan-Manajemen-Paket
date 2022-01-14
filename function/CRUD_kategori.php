@@ -30,7 +30,7 @@ if (isset($_POST['edit_kategori'])) {
         echo ("Error description: " . mysqli_error($con));
     }
 
-    header("location:../View/Dashboard/index.php?page=admin_user2");
+    header("location:../View/Dashboard/index.php?page=kategori");
 }
 
 if (isset($_GET['id_kategori_hapus'])) {
@@ -44,5 +44,5 @@ if (isset($_GET['id_kategori_hapus'])) {
         echo ("Error description: " . mysqli_error($con));
     }
 
-    header("location:../View/Dashboard/index.php?page=admin_user2");
+    header("location:../View/Dashboard/index.php?page=kategori");
 }

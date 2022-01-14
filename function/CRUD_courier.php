@@ -5,7 +5,7 @@ include 'connect.php';
 if (isset($_POST['tambah_kurir'])) {
 
     $username = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
-    $pass = $_POST['password'];
+    $pass = md5($_POST['password']);
     $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL, FILTER_SANITIZE_STRING);
     $nama = filter_var($_POST['nama'], FILTER_SANITIZE_STRING);
     $level = filter_var($_POST['level'], FILTER_SANITIZE_STRING);

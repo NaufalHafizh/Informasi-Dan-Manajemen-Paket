@@ -12,7 +12,9 @@
                     <th>Kategori</th>
                     <th>Status</th>
                     <th>Edit</th>
-                    <th>Delete</th>
+                    <?php if (isset($_SESSION['admin'])) : ?>
+                        <th>Delete</th>
+                    <?php endif ?>
                 </tr>
             </thead>
             <tbody>
@@ -40,9 +42,11 @@
                             <td class="text-center">
                                 <a data-bs-toggle="modal" data-bs-target="#exampleModal<?= $data['ID_Pengiriman'] ?>" href=""><span class="badge bg-warning"><i class="fas fa-edit fa-2x"></i></span></a>
                             </td>
-                            <td class="text-center">
-                                <a href="../../../function/CRUD_pengiriman.php?id_kirim_hapus=<?= $data['ID_Pengiriman'] ?>"><span class="badge bg-danger"><i class="fas fa-trash-alt fa-2x"></i></span></a>
-                            </td>
+                            <?php if (isset($_SESSION['admin'])) : ?>
+                                <td class="text-center">
+                                    <a href="../../../function/CRUD_pengiriman.php?id_kirim_hapus=<?= $data['ID_Pengiriman'] ?>"><span class="badge bg-danger"><i class="fas fa-trash-alt fa-2x"></i></span></a>
+                                </td>
+                            <?php endif ?>
                         </div>
                     </tr>
                     <!-- Modal edit -->

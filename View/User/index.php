@@ -261,7 +261,7 @@ $nama_depan = substr($_SESSION['username_user'], 0, 1);
                                 <br>
                             </div>
                             <div>
-                                <p class="text-danger">Pastikan semua data benar, karena data sudah tidak dapat dirubah kembali</p>
+                                <p class="text-danger">Pastikan semua data benar, karena data sudah tersimpan tidak dapat dirubah kembali</p>
                             </div>
                         </div>
                         <div class="modal-footer d-flex justify-content-start">

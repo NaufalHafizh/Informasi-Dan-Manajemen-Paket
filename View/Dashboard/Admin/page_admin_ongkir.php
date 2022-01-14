@@ -4,7 +4,7 @@
     </div>
     <!-- /.card-header -->
     <div class="card-body">
-        <button data-bs-toggle="modal" data-bs-target="#tambahAdmin" class="ms-auto d-flex mb-2 btn btn-success">Kategori<i class="fas fa-plus mt-1 ml-1"></i></button>
+        <button data-bs-toggle="modal" data-bs-target="#tambahAdmin" class="ms-auto d-flex mb-2 btn btn-success">Ongkir <i class="fas fa-plus mt-1 ml-1"></i></button>
         <table id="example2" class="table table-bordered table-hover">
             <thead>
                 <tr>

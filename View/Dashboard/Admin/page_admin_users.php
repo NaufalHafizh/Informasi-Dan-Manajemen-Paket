@@ -12,7 +12,6 @@
                     <th>Password</th>
                     <th>Email</th>
                     <th>Nama</th>
-                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -27,12 +26,7 @@
                         <td><?= $data['Username']; ?></td>
                         <td><?= md5($data['Password']); ?></td>
                         <td><?= $data['Email']; ?></td>
-                        <td><?= $data['Nama']; ?></td>
-                        <div class="">
-                            <td class="text-center">
-                                <a href=""><span class="badge bg-danger"><i class="fas fa-trash-alt fa-2x"></i></span></a>
-                            </td>
-                        </div>
+                        <td><?= $data['Nama']; ?></td>>
                     </tr>
 
                 <?php
