@@ -77,7 +77,7 @@ $nama_depan = substr($_SESSION['username_user'], 0, 1);
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><a class="dropdown-item" href="user_profile.php?user=<?= $_SESSION['username_user'] ?>">Profile</a></li>
-                            <li><a class="dropdown-item" href="../../function//logout_user.php">Logout</a></li>
+                            <li><a data-bs-toggle="modal" data-bs-target="#logout" class="dropdown-item" href="">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -113,10 +113,12 @@ $nama_depan = substr($_SESSION['username_user'], 0, 1);
                                 <?php if ($read['status'] == 1) : ?>
                                     <span class="badge badge-warning">Pending</span>
                                 <?php elseif ($read['status'] == 2) : ?>
-                                    <span class="badge badge-warning">Packing</span>
+                                    <span class="badge badge-warning">Pickup</span>
                                 <?php elseif ($read['status'] == 3) : ?>
-                                    <span class="badge badge-primary">Delivered</span>
+                                    <span class="badge badge-warning">Checking</span>
                                 <?php elseif ($read['status'] == 4) : ?>
+                                    <span class="badge badge-primary">Delivered</span>
+                                <?php elseif ($read['status'] == 5) : ?>
                                     <span class="badge badge-success">Arived</span>
                                 <?php endif ?>
                             </p>
@@ -147,10 +149,12 @@ $nama_depan = substr($_SESSION['username_user'], 0, 1);
                                             <?php if ($paket_detail['status'] == 1) : ?>
                                                 <p class="">Pending</p>
                                             <?php elseif ($paket_detail['status'] == 2) : ?>
-                                                <p class="">Packing</p>
+                                                <p class="">Pickup</p>
                                             <?php elseif ($paket_detail['status'] == 3) : ?>
-                                                <p class="">Delivered</p>
+                                                <p class="">Checking</p>
                                             <?php elseif ($paket_detail['status'] == 4) : ?>
+                                                <p class="">Delivered</p>
+                                            <?php elseif ($paket_detail['status'] == 5) : ?>
                                                 <p class="">Arived</p>
                                             <?php endif ?>
                                         </div>
@@ -268,6 +272,25 @@ $nama_depan = substr($_SESSION['username_user'], 0, 1);
                             <button type="submit" name="tambah_pengiriman" class="btn btn-success">Kirim</button>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="logout" tabindex="-1" aria-labelledby="logout" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Apakah anda Yakin Ingin Keluar ? </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">NO</button>
+                    <a class="text-decoration-none btn btn-danger" href="../../function//logout_user.php">YES</a>
                 </div>
             </div>
         </div>

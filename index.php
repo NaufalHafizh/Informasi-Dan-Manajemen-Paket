@@ -100,17 +100,16 @@
                     <div class="col-md-3">
                         <p class="fw-bold">Produk Dan Layanan</p>
                         <div class="produk">
-                            <a class="d-block text-decoration-none" href="">FAQ</a>
-                            <a class="d-block text-decoration-none" href="">Terms & Condition</a>
-                            <a class="d-block text-decoration-none" href="">Privacy Policy</a>
+                            <a class="d-block text-decoration-none" href="">Pengiriman Barang</a>
+                            <a class="d-block text-decoration-none" href="">Pengiriman Hewan</a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <p class="fw-bold">INFO KONTAK</p>
                         <div class="kontak">
-                            <a class="d-block text-decoration-none" href="">FAQ</a>
-                            <a class="d-block text-decoration-none" href="">Terms & Condition</a>
-                            <a class="d-block text-decoration-none" href="">Privacy Policy</a>
+                            <a class="d-block text-decoration-none" href=""><i style="margin-right: 12px;" class="fas fa-map-marker-alt"></i> Jalan yang Lurus No01</a>
+                            <a class="d-block text-decoration-none" href=""><i style="margin-right: 12px;" class="fas fa-phone-volume"></i> 085xxxxxxx</a>
+                            <a class="d-block text-decoration-none" href=""><i style="margin-right: 8px;" class="far fa-envelope"></i> Support: customer.care@fast.com</a>
                         </div>
                     </div>
                 </div>

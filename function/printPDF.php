@@ -12,7 +12,7 @@ $total = $ambilData['Ongkos'];
 
 
 ob_start();
-$pdf = new FPDF('P', 'mm', 'A4');
+$pdf = new FPDF('L', 'mm', 'A4');
 
 $pdf->AddPage();
 

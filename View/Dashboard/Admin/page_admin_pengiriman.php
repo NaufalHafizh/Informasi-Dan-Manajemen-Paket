@@ -31,10 +31,12 @@
                             <?php if ($data['status'] == 1) : ?>
                                 <span class="badge badge-warning">Pending</span>
                             <?php elseif ($data['status'] == 2) : ?>
-                                <span class="badge badge-warning">Packing</span>
+                                <span class="badge badge-warning">Pickup</span>
                             <?php elseif ($data['status'] == 3) : ?>
-                                <span class="badge badge-primary">Delivered</span>
+                                <span class="badge badge-info">Checking</span>
                             <?php elseif ($data['status'] == 4) : ?>
+                                <span class="badge badge-primary">Delivered</span>
+                            <?php elseif ($data['status'] == 5) : ?>
                                 <span class="badge badge-success">Arived</span>
                             <?php endif ?>
                         </td>
@@ -97,16 +99,19 @@
                                                         <?php if ($row['status'] == 1) : ?>
                                                             <option value="1" selected>Pending</option>
                                                         <?php elseif ($row['status'] == 2) : ?>
-                                                            <option value="2" selected>Packing</option>
+                                                            <option value="2" selected>Pickup</option>
                                                         <?php elseif ($row['status'] == 3) : ?>
-                                                            <option value="3" selected>Delivered</option>
+                                                            <option value="3" selected>Checking</option>
                                                         <?php elseif ($row['status'] == 4) : ?>
+                                                            <option value="3" selected>Delivered</option>
+                                                        <?php elseif ($row['status'] == 5) : ?>
                                                             <option value="4" selected>Arrived</option>
                                                         <?php endif ?>
                                                         <option value="1">Pending</option>
-                                                        <option value="2">Packing</option>
-                                                        <option value="3">Deliver</option>
-                                                        <option value="4">Arrive</option>
+                                                        <option value="2">Pickup</option>
+                                                        <option value="3">checking</option>
+                                                        <option value="4">Deliver</option>
+                                                        <option value="5">Arrive</option>
                                                     </select>
                                                     <br>
                                                 </div>
@@ -160,11 +165,13 @@
                                                 <?php if ($paket_detail['status'] == 1) : ?>
                                                     <p class="badge badge-warning">Pending</p>
                                                 <?php elseif ($paket_detail['status'] == 2) : ?>
-                                                    <p class="badge badge-warning">Packing</p>
+                                                    <p class="badge badge-warning">Pickup</p>
                                                 <?php elseif ($paket_detail['status'] == 3) : ?>
-                                                    <p class="badge badge-warning">Delivered</p>
+                                                    <p class="badge badge-info">Checking</p>
                                                 <?php elseif ($paket_detail['status'] == 4) : ?>
-                                                    <p class="badge badge-warning">Arived</p>
+                                                    <p class="badge badge-primary">Delivered</p>
+                                                <?php elseif ($paket_detail['status'] == 5) : ?>
+                                                    <p class="badge badge-success">Arived</p>
                                                 <?php endif ?>
                                                 <p>Dibuat : <?= $paket_detail['Dibuat'] ?> </p>
                                                 <p>Terakhir Diubah : <?= $paket_detail['Diubah'] ?></p>
