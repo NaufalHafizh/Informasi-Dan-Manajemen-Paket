@@ -2,7 +2,7 @@
 <p> Fast Parcel Merupakan sebuah aplikasi expedisi yang yg memudahkan masyarakat untuk mengirimkan paket tanpa harus pergi ke drop point terdekat </p>
 <h1 align="left">Aplikasi ini dibuat menggunakan </h1>
 
-<h3 align="left">bahasa</h3>
+<h3 align="left">Bahasa</h3>
 <p>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="naufalhafizh" />
   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="naufalhafizh" />
