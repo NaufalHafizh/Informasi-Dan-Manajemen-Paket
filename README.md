@@ -1,6 +1,8 @@
 # Informasi-Dan-Manajemen-Paket
 <p> Fast Parcel Merupakan sebuah aplikasi expedisi yang yg memudahkan masyarakat untuk mengirimkan paket tanpa harus pergi ke drop point terdekat </p>
-<h3 align="left">Aplikasi ini dibuat menggunakan </h3>
+<h1 align="left">Aplikasi ini dibuat menggunakan </h1>
+
+<h3 align="left">bahasa</h3>
 <p>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="naufalhafizh" />
   <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="naufalhafizh" />
