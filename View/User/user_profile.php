@@ -48,7 +48,7 @@ $nama_depan = substr($_SESSION['username_user'], 0, 1);
                             </div>
                             <div class="col-md-6">
                                 <label for="">Old Password</label>
-                                <input type="text" class="form-control" name="password_pelanggan_ubah" value="<?= $update['Password'] ?>" readonly>
+                                <input type="password" class="form-control" name="password_pelanggan_ubah" value="<?= $update['Password'] ?>" readonly>
                             </div>
                             <div class=" col-md-6">
                                 <label for="">Email</label>

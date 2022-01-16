@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin | Login</title>
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="../../plugin/bootstrap-5.1.1-dist/css/bootstrap.min.css">
@@ -28,15 +28,12 @@
             <div class="col-md-3">
                 <h2 class="text-dark mt-5 text-center">Admin Login</h2>
                 <div class="card my-5" style="width: 20rem;">
-                    <form action="../../function/ceklogin-admin.php" method="POST" class=" card-body cardbody-color p-lg-5 align-bottom">
+                    <form action="../../function/ceklogin-admin.php" method="POST" class="was-validated card-body cardbody-color p-lg-5 align-bottom">
                         <div class="mb-3 input-group has-validation">
-                            <input type="text" class="form-control" name="username" id="Username" aria-describedby="emailHelp" placeholder="User Name">
-                            <div class="invalid-feedback">
-                                Please choose a username.
-                            </div>
+                            <input type="text" class="form-control" name="username" id="Username" aria-describedby="emailHelp" placeholder="User Name" required>
                         </div>
                         <div class="mb-3 input-group has-validation">
-                            <input type="password" class="form-control" name="password" id="password" placeholder="password">
+                            <input type="password" class="form-control" name="password" id="password" placeholder="password" required>
                         </div>
                         <div class="text-center"><button type="submit" class="btn btn-dark px-5 mb-5 w-100">Login</button></div>
                     </form>

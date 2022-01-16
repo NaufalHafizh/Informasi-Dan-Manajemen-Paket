@@ -216,7 +216,7 @@ $nama_depan = substr($_SESSION['username_user'], 0, 1);
                             while ($na = mysqli_fetch_array($nama_alamat)) {
                             ?>
                                 <div class="form-groub">
-                                    <label for="">Nama Pengirim</label>
+                                    <label for="">Nama Pengirim(Username)</label>
                                     <input type="text" class="form-control" value="<?= $na['Username'] ?>" name="username_tambah" readonly> <br>
                                 </div>
                                 <div class="form-groub">

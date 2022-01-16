@@ -65,7 +65,6 @@ session_start();
                                 <div class="input-group rounded-3">
                                     <span class="input-group-text" id="addon-wrapping"><i class="fas fa-user-alt"></i></span>
                                     <input type="text" class="form-control" name="username_user" aria-describedby="addon-wrapping" required> <br>
-                                    <div class="invalid-feedback">Username tidak boleh kosong !</div>
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -73,7 +72,6 @@ session_start();
                                 <div class="input-group rounded-3">
                                     <span class="input-group-text" id="addon-wrapping"><i class="fas fa-lock"></i></span>
                                     <input type="password" class="form-control" name="password" aria-describedby="addon-wrapping" required>
-                                    <div class="invalid-feedback">Password tidak boleh kosong !</div>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center mt-3 buttonlogin">

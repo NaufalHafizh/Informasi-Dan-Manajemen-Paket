@@ -3,7 +3,7 @@ session_start();
 include 'connect.php';
 
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password = md5($_POST['password']);
 
 $sql = mysqli_query($con, "SELECT * FROM admin WHERE Username = '$username' AND Password = '$password'");
 $cek = mysqli_num_rows($sql);
